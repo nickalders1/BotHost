@@ -1,0 +1,14 @@
+[
+  {
+    "id": "basic",
+    "name": "Basic Hosting",
+    "price": 5,
+    "description": "Perfect voor kleine bots."
+  },
+  {
+    "id": "pro",
+    "name": "Pro Hosting",
+    "price": 10,
+    "description": "Voor grotere bots met meer power."
+  }
+]
