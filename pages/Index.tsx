@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Bot, Server, Shield, Zap, Star, Users, MessageSquare, Settings } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Index = () => {
   const featuredBots = [
@@ -52,15 +52,15 @@ const Index = () => {
             <span className="text-2xl font-bold">BotHost</span>
           </div>
           <div className="flex items-center space-x-4">
-            <Link to="/browse">
+            <Link legacyBehavior href="/browse">
               <Button variant="ghost">Browse Bots</Button>
             </Link>
             <Button variant="ghost">Pricing</Button>
             <Button variant="ghost">Support</Button>
-            <Link to="/auth">
+            <Link legacyBehavior href="/auth">
               <Button variant="outline">Login</Button>
             </Link>
-            <Link to="/auth">
+            <Link legacyBehavior href="/auth">
               <Button>Get Started</Button>
             </Link>
           </div>
@@ -77,7 +77,7 @@ const Index = () => {
             Rent or buy high-quality, pre-built Discord bots. Get your server enhanced in minutes, not months.
           </p>
           <div className="flex justify-center space-x-4">
-            <Link to="/browse">
+            <Link legacyBehavior href="/browse">
               <Button size="lg" className="text-lg px-8">
                 Browse Bots
               </Button>
@@ -276,7 +276,7 @@ const Index = () => {
             <div>
               <h3 className="font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li><Link to="/browse">Browse Bots</Link></li>
+                <li><Link legacyBehavior href="/browse">Browse Bots</Link></li>
                 <li>Pricing</li>
                 <li>Features</li>
                 <li>API</li>
